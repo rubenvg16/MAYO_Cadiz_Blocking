@@ -1,0 +1,214 @@
+{
+  "titulo": "El patio bajo",
+  "elementos": [
+    {
+      "id": "COR-N2-01",
+      "nombre": "Macetas bajas (1 p.)",
+      "posicion": "x 5 · y 0,8",
+      "funcion": "Con la caña baja.",
+      "implementacion": "Maceta",
+      "arte": "Maceta añil (geranio, gitanilla)",
+      "prioridad": "M",
+      "x": 5.0,
+      "y": 0.8
+    },
+    {
+      "id": "COR-N2-02",
+      "nombre": "Macetas de la pared (2 p.)",
+      "posicion": "x 7 · y 2,8",
+      "funcion": "Caña alta y un poco de balanceo.",
+      "implementacion": "Maceta",
+      "arte": "Macetas colgadas de clavos",
+      "prioridad": "M",
+      "x": 7.0,
+      "y": 2.8
+    },
+    {
+      "id": "COR-N2-03",
+      "nombre": "Escalera de tijera",
+      "posicion": "x 13",
+      "funcion": "Plataforma de 1,2 m: desde arriba la caña llega a 4,8 m.",
+      "implementacion": "BoxCollider2D + PlatformEffector2D arriba",
+      "arte": "Escalera de tijera de madera",
+      "prioridad": "M",
+      "x": 13.0,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N2-04",
+      "nombre": "Macetas altas de la pared (2 p.)",
+      "posicion": "x 15,5 · y 4,4",
+      "funcion": "Solo desde la escalera de tijera.",
+      "implementacion": "Maceta",
+      "arte": "Macetas colgadas",
+      "prioridad": "M",
+      "x": 15.5,
+      "y": 4.4
+    },
+    {
+      "id": "COR-N2-05",
+      "nombre": "Boca del pozo al patio",
+      "posicion": "x 21,5",
+      "funcion": "El mismo pozo del zaguán, por su boca del patio: ACCIÓN llena la lata.",
+      "implementacion": "Trigger de llenado",
+      "arte": "Brocal pequeño con garrucha",
+      "prioridad": "M",
+      "x": 21.5,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N2-06",
+      "nombre": "Búcaro",
+      "posicion": "x 26",
+      "funcion": "En el poyete de la puerta de la cocina.",
+      "implementacion": "Recogible de vida",
+      "arte": "Búcaro",
+      "prioridad": "M",
+      "x": 26.0,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N2-07",
+      "nombre": "Macetas colgadas que se mecen",
+      "posicion": "x 29,5 · y 2,8",
+      "funcion": "Se mecen al golpearlas; un golpe fuerte las descuelga.",
+      "implementacion": "HingeJoint2D con ruptura",
+      "arte": "Maceta colgada (pieza aparte)",
+      "prioridad": "D",
+      "x": 29.5,
+      "y": 2.8
+    },
+    {
+      "id": "COR-N2-08",
+      "nombre": "Maceta que se descuelga",
+      "posicion": "x 33,5 · y 3,4",
+      "funcion": "Se balancea (aviso) y cae: se rompe y resta 1; si cae encima, un golpe.",
+      "implementacion": "Peligro (PMV)",
+      "arte": "Maceta cayendo y rota (3 fot.)",
+      "prioridad": "M",
+      "x": 33.5,
+      "y": 3.4
+    },
+    {
+      "id": "COR-N2-09",
+      "nombre": "Taza de la fuente",
+      "posicion": "x 43,5",
+      "funcion": "Poyo de 0,7 m; desde su borde se entra en el chorro.",
+      "implementacion": "BoxCollider2D",
+      "arte": "Fuente de piedra con taza baja",
+      "prioridad": "M",
+      "x": 43.5,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N2-10",
+      "nombre": "El chorro de la fuente",
+      "posicion": "x 44,6-46 · y 0,7-4,4",
+      "funcion": "Columna de agua que la eleva hasta la galería (3,6 m). No gasta la lata.",
+      "implementacion": "AreaEffector2D (trigger, fuerza en Y)",
+      "arte": "Chorro de agua turquesa (4 fot.)",
+      "prioridad": "M",
+      "x": 44.6,
+      "y": 0.7
+    },
+    {
+      "id": "COR-N2-11",
+      "nombre": "Galería (primer tramo)",
+      "posicion": "x 46,6 · y 3,6",
+      "funcion": "Pasillo de un sentido: se sube desde abajo, se baja pulsando abajo.",
+      "implementacion": "PlatformEffector2D",
+      "arte": "Galería con barandilla de hierro y arcos",
+      "prioridad": "M",
+      "x": 46.6,
+      "y": 3.6
+    },
+    {
+      "id": "COR-N2-12",
+      "nombre": "Macetas sobre la galería (2 p.)",
+      "posicion": "x 50 · y 6",
+      "funcion": "Desde la galería, con la caña alta.",
+      "implementacion": "Maceta",
+      "arte": "Macetas del primer piso",
+      "prioridad": "M",
+      "x": 50.0,
+      "y": 6.0
+    },
+    {
+      "id": "COR-N2-13",
+      "nombre": "Clavel 2/5",
+      "posicion": "x 60,5 · y 3,6",
+      "funcion": "Al final de la galería, detrás de una maceta grande.",
+      "implementacion": "ObjetoEspecial",
+      "arte": "Clavel rojo",
+      "prioridad": "M",
+      "x": 60.5,
+      "y": 3.6
+    },
+    {
+      "id": "COR-N2-14",
+      "nombre": "Poyete",
+      "posicion": "x 61,5",
+      "funcion": "Primer escalón hacia el emparrado.",
+      "implementacion": "BoxCollider2D",
+      "arte": "Poyete encalado",
+      "prioridad": "M",
+      "x": 61.5,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N2-15",
+      "nombre": "Banco de azulejos",
+      "posicion": "x 63",
+      "funcion": "Segundo escalón.",
+      "implementacion": "BoxCollider2D",
+      "arte": "Banco de azulejos",
+      "prioridad": "M",
+      "x": 63.0,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N2-16",
+      "nombre": "El emparrado",
+      "posicion": "x 64,6 · y 2,3",
+      "funcion": "Pérgola de la parra: camino alto bajo la galería.",
+      "implementacion": "PlatformEffector2D",
+      "arte": "Emparrado de hierro con parra",
+      "prioridad": "M",
+      "x": 64.6,
+      "y": 2.3
+    },
+    {
+      "id": "COR-N2-17",
+      "nombre": "Tramo de parra que cede",
+      "posicion": "x 69,8 · y 2,1",
+      "funcion": "Baja al pisarlo y la devuelve arriba.",
+      "implementacion": "SpringJoint2D",
+      "arte": "Tramo de parra suelto",
+      "prioridad": "D",
+      "x": 69.8,
+      "y": 2.1
+    },
+    {
+      "id": "COR-N2-18",
+      "nombre": "Clavo vacío alto",
+      "posicion": "x 72,5 · y 3,3",
+      "funcion": "Se cuelga desde el final del emparrado.",
+      "implementacion": "Punto de colgar",
+      "arte": "Clavo",
+      "prioridad": "M",
+      "x": 72.5,
+      "y": 3.3
+    },
+    {
+      "id": "COR-N2-19",
+      "nombre": "Maceta suelta",
+      "posicion": "x 75,5",
+      "funcion": "Hay que subirla al emparrado para colgarla en el clavo alto.",
+      "implementacion": "Recogible",
+      "arte": "Maceta suelta",
+      "prioridad": "M",
+      "x": 75.5,
+      "y": 0.2
+    }
+  ]
+}

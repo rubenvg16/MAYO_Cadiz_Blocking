@@ -1,0 +1,11 @@
+{
+  "titulo": "El zaguán",
+  "ancho": 38.4,
+  "alto": 21.6,
+  "objetivo": "Recoger las macetas volcadas antes de que el jurado abra la cancela",
+  "amenazas": [
+    "Paloma",
+    "Bandada",
+    "Gato"
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "titulo": "La escalera y el alero",
+  "elementos": [
+    {
+      "id": "COR-N4-01",
+      "nombre": "Pozo del segundo patio",
+      "posicion": "x 4,5",
+      "funcion": "ACCIÓN llena la lata.",
+      "implementacion": "Trigger de llenado",
+      "arte": "Brocal pequeño con garrucha",
+      "prioridad": "M",
+      "x": 4.5,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N4-02",
+      "nombre": "Búcaro en la ventana",
+      "posicion": "x 9 · y 1",
+      "funcion": "En la ventana de la cocina: recupera un golpe.",
+      "implementacion": "Recogible de vida",
+      "arte": "Búcaro en el alféizar",
+      "prioridad": "M",
+      "x": 9.0,
+      "y": 1.0
+    },
+    {
+      "id": "COR-N4-03",
+      "nombre": "Macetas bajas (1 p.)",
+      "posicion": "x 11,5 · y 0,7",
+      "funcion": "Junto al pozo.",
+      "implementacion": "Maceta",
+      "arte": "Maceta añil",
+      "prioridad": "M",
+      "x": 11.5,
+      "y": 0.7
+    },
+    {
+      "id": "COR-N4-04",
+      "nombre": "Escalera de obra",
+      "posicion": "x 13,5",
+      "funcion": "Sube a la galería trasera.",
+      "implementacion": "EdgeCollider2D",
+      "arte": "Escalera de obra encalada",
+      "prioridad": "M",
+      "x": 13.5,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N4-05",
+      "nombre": "Galería trasera",
+      "posicion": "x 18 · y 3,6",
+      "funcion": "Pasillo de un sentido; caer al patio cuesta un golpe.",
+      "implementacion": "PlatformEffector2D",
+      "arte": "Galería sencilla con barandilla",
+      "prioridad": "M",
+      "x": 18.0,
+      "y": 3.6
+    },
+    {
+      "id": "COR-N4-06",
+      "nombre": "Macetas del primer piso (2 p.)",
+      "posicion": "x 23 · y 6",
+      "funcion": "Desde la galería trasera.",
+      "implementacion": "Maceta",
+      "arte": "Macetas",
+      "prioridad": "M",
+      "x": 23.0,
+      "y": 6.0
+    },
+    {
+      "id": "COR-N4-07",
+      "nombre": "Escalera de mano al tejado",
+      "posicion": "x 28",
+      "funcion": "Se sube con la caña cruzada al hombro (no se riega subiendo).",
+      "implementacion": "Trigger de escalera",
+      "arte": "Escalera de mano",
+      "prioridad": "M",
+      "x": 28.0,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N4-08",
+      "nombre": "Tejado (alero de tejas)",
+      "posicion": "x 28,6 · y 7,2",
+      "funcion": "Camino alto de tejas; se puede caer por los dos lados.",
+      "implementacion": "PlatformEffector2D + PhysicsMaterial2D",
+      "arte": "Tejado de teja árabe con alero (repetible)",
+      "prioridad": "M",
+      "x": 28.6,
+      "y": 7.2
+    },
+    {
+      "id": "COR-N4-09",
+      "nombre": "Palomas del tejado",
+      "posicion": "x 31-37 · y 7,2",
+      "funcion": "Andan por las tejas; espantarlas gasta riegos que hacen falta para el alero.",
+      "implementacion": "Paloma (FSM)",
+      "arte": "Paloma",
+      "prioridad": "M",
+      "x": 31.0,
+      "y": 7.2
+    },
+    {
+      "id": "COR-N4-10",
+      "nombre": "Avispero del alero",
+      "posicion": "x 41,5 · y 6,5",
+      "funcion": "Bajo las tejas del alero. Sale una avispa.",
+      "implementacion": "Punto de patrulla",
+      "arte": "Avispero de barro",
+      "prioridad": "M",
+      "x": 41.5,
+      "y": 6.5
+    },
+    {
+      "id": "COR-N4-11",
+      "nombre": "Avispa del alero",
+      "posicion": "x 44 · y 5",
+      "funcion": "Vuela en circuito alrededor del avispero; si la ve, zumba fuerte (aviso) y pica.",
+      "implementacion": "Avispa (FSM)",
+      "arte": "Avispa (4 estados)",
+      "prioridad": "M",
+      "x": 44.0,
+      "y": 5.0
+    },
+    {
+      "id": "COR-N4-12",
+      "nombre": "Macetas del alero (5 p.)",
+      "posicion": "x 39,5 · y 6",
+      "funcion": "Junto al avispero: se riegan desde lejos, desde la galería o desde el tejado.",
+      "implementacion": "Maceta",
+      "arte": "Maceta de alero con clavel",
+      "prioridad": "M",
+      "x": 39.5,
+      "y": 6.0
+    },
+    {
+      "id": "COR-N4-13",
+      "nombre": "Chimenea",
+      "posicion": "x 53 · y 7,2",
+      "funcion": "Tapa; detrás, el clavel.",
+      "implementacion": "BoxCollider2D",
+      "arte": "Chimenea encalada",
+      "prioridad": "M",
+      "x": 53.0,
+      "y": 7.2
+    },
+    {
+      "id": "COR-N4-14",
+      "nombre": "Clavel 4/5",
+      "posicion": "x 54,6 · y 7,2",
+      "funcion": "Detrás de la chimenea.",
+      "implementacion": "ObjetoEspecial",
+      "arte": "Clavel",
+      "prioridad": "M",
+      "x": 54.6,
+      "y": 7.2
+    },
+    {
+      "id": "COR-N4-15",
+      "nombre": "La cámara alta",
+      "posicion": "x 58 · y 7,2",
+      "funcion": "Fachada de la cámara (soberado), al fondo: el tejado pasa por delante. Su alero está a 10,4 m.",
+      "implementacion": "Decorado (sin colisión)",
+      "arte": "Fachada de la cámara alta con ventanuco",
+      "prioridad": "M",
+      "x": 58.0,
+      "y": 7.2
+    },
+    {
+      "id": "COR-N4-16",
+      "nombre": "Alero de la cámara alta",
+      "posicion": "x 57,5 · y 10,4",
+      "funcion": "Solo para las avispas y las palomas.",
+      "implementacion": "Collider de navegación",
+      "arte": "Alero de tejas",
+      "prioridad": "M",
+      "x": 57.5,
+      "y": 10.4
+    },
+    {
+      "id": "COR-N4-17",
+      "nombre": "Avispa de la cámara alta",
+      "posicion": "x 66 · y 11,2",
+      "funcion": "Patrulla por encima del tejado; las tejas cortan su raycast si Rafaela se agacha junto al muro.",
+      "implementacion": "Avispa (FSM)",
+      "arte": "Avispa",
+      "prioridad": "M",
+      "x": 66.0,
+      "y": 11.2
+    },
+    {
+      "id": "COR-N4-18",
+      "nombre": "Macetas del alero alto (5 p.)",
+      "posicion": "x 60,5 · y 9,4",
+      "funcion": "Desde el tejado, con la caña alta (llega justo).",
+      "implementacion": "Maceta",
+      "arte": "Maceta de alero",
+      "prioridad": "M",
+      "x": 60.5,
+      "y": 9.4
+    },
+    {
+      "id": "COR-N4-19",
+      "nombre": "Escalera de mano al segundo patio",
+      "posicion": "x 74",
+      "funcion": "Bajada del tejado.",
+      "implementacion": "Trigger de escalera",
+      "arte": "Escalera de mano larga",
+      "prioridad": "M",
+      "x": 74.0,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N4-20",
+      "nombre": "Puerta de la escalera de la azotea",
+      "posicion": "x 86",
+      "funcion": "Al cruzarla empieza la transición.",
+      "implementacion": "Trigger de salida",
+      "arte": "Puerta de madera con aldaba",
+      "prioridad": "M",
+      "x": 86.0,
+      "y": 0.2
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+.panel { position: absolute; top: 9%; left: 7%; width: 380px; padding: 24px; background-color: rgba(25,37,56,0.97); color: #faf5e8; border-radius: 10px; }
+#titulo { font-size: 40px; -unity-font-style: bold; margin-bottom: 12px; }
+#subtitulo { color: #edbf79; letter-spacing: 2px; }
+Button { min-height: 34px; margin-top: 5px; padding-left: 10px; padding-right: 10px; }
+.hud { position: absolute; top: 12px; left: 12px; right: 12px; flex-direction: row; align-items: center; justify-content: space-between; padding: 8px; background-color: rgba(25,37,56,0.94); color: #faf5e8; font-size: 18px; }
+.ayuda { position: absolute; bottom: 12px; left: 12px; padding: 8px; background-color: rgba(25,37,56,0.94); color: #faf5e8; }
+.fundido { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: black; opacity: 0; }
+.nivel-actual { color: #edbf79; -unity-font-style: bold; flex-shrink: 1; white-space: normal; }

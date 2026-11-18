@@ -1,0 +1,181 @@
+{
+  "titulo": "La galería",
+  "elementos": [
+    {
+      "id": "COR-N3-01",
+      "nombre": "Escalera de obra a la galería",
+      "posicion": "x 3",
+      "funcion": "Se sube andando.",
+      "implementacion": "EdgeCollider2D",
+      "arte": "Escalera de obra con zócalo de azulejo",
+      "prioridad": "M",
+      "x": 3.0,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N3-02",
+      "nombre": "La galería",
+      "posicion": "x 7,5 · y 3,6",
+      "funcion": "Pasillo de un sentido con barandilla; abajo + SALTAR baja al patio.",
+      "implementacion": "PlatformEffector2D",
+      "arte": "Galería: suelo, barandilla de hierro y arcos (piezas repetibles)",
+      "prioridad": "M",
+      "x": 7.5,
+      "y": 3.6
+    },
+    {
+      "id": "COR-N3-03",
+      "nombre": "Ventana del pozo",
+      "posicion": "x 10 · y 3,6",
+      "funcion": "El pozo medianero tiene ventana en la galería: ACCIÓN sube el cubo con la garrucha y llena la lata (3 s).",
+      "implementacion": "Trigger de llenado",
+      "arte": "Ventana con garrucha y soga",
+      "prioridad": "M",
+      "x": 10.0,
+      "y": 3.6
+    },
+    {
+      "id": "COR-N3-04",
+      "nombre": "Macetas del patio, desde arriba (1 p.)",
+      "posicion": "x 20 · y 0,8",
+      "funcion": "Se riegan con la lata colgando por fuera de la barandilla.",
+      "implementacion": "Maceta",
+      "arte": "Macetas bajas",
+      "prioridad": "M",
+      "x": 20.0,
+      "y": 0.8
+    },
+    {
+      "id": "COR-N3-05",
+      "nombre": "Macetas de la pared, por debajo (2 p.)",
+      "posicion": "x 24 · y 2,2",
+      "funcion": "Entre el patio y la galería: lata hacia abajo y balanceo.",
+      "implementacion": "Maceta",
+      "arte": "Macetas de pared",
+      "prioridad": "M",
+      "x": 24.0,
+      "y": 2.2
+    },
+    {
+      "id": "COR-N3-06",
+      "nombre": "Macetas sobre la galería (2 p.)",
+      "posicion": "x 22 · y 6,2",
+      "funcion": "Hacia arriba, con la caña alta.",
+      "implementacion": "Maceta",
+      "arte": "Macetas del primer piso",
+      "prioridad": "M",
+      "x": 22.0,
+      "y": 6.2
+    },
+    {
+      "id": "COR-N3-07",
+      "nombre": "Escalera de mano al patio",
+      "posicion": "x 35",
+      "funcion": "Para volver a la galería si se cae al patio.",
+      "implementacion": "Trigger de escalera (trepar)",
+      "arte": "Escalera de mano de madera",
+      "prioridad": "M",
+      "x": 35.0,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N3-08",
+      "nombre": "Paloma de la barandilla",
+      "posicion": "x 38-48 · y 3,6",
+      "funcion": "Anda por la barandilla y se posa en las macetas; a 2,5 m huye y vuelve al rato.",
+      "implementacion": "Paloma (FSM)",
+      "arte": "Paloma (4 estados)",
+      "prioridad": "M",
+      "x": 38.0,
+      "y": 3.6
+    },
+    {
+      "id": "COR-N3-09",
+      "nombre": "Repisa alta de macetas",
+      "posicion": "x 50 · y 6",
+      "funcion": "Solo para las palomas: Rafaela no llega.",
+      "implementacion": "Collider de navegación de las palomas",
+      "arte": "Repisa de obra",
+      "prioridad": "M",
+      "x": 50.0,
+      "y": 6.0
+    },
+    {
+      "id": "COR-N3-10",
+      "nombre": "Paloma de la repisa",
+      "posicion": "x 51,2 · y 6",
+      "funcion": "Posada junto a una maceta: si se queda, la vuelca. Un chorro la espanta.",
+      "implementacion": "Paloma (FSM)",
+      "arte": "Paloma",
+      "prioridad": "M",
+      "x": 51.2,
+      "y": 6.0
+    },
+    {
+      "id": "COR-N3-11",
+      "nombre": "Búcaro de la alacena",
+      "posicion": "x 55,5 · y 3,6",
+      "funcion": "En una alacena de la galería: recupera un golpe.",
+      "implementacion": "Recogible de vida",
+      "arte": "Búcaro",
+      "prioridad": "M",
+      "x": 55.5,
+      "y": 3.6
+    },
+    {
+      "id": "COR-N3-12",
+      "nombre": "Macetas de la pared alta (2 p.)",
+      "posicion": "x 60 · y 6,4",
+      "funcion": "Seguidas y lejos del pozo: hay que contar los riegos.",
+      "implementacion": "Maceta",
+      "arte": "Macetas",
+      "prioridad": "M",
+      "x": 60.0,
+      "y": 6.4
+    },
+    {
+      "id": "COR-N3-13",
+      "nombre": "Escalera de tijera de la galería",
+      "posicion": "x 66,5 · y 3,6",
+      "funcion": "Da 1,2 m más sobre la galería.",
+      "implementacion": "BoxCollider2D + PlatformEffector2D",
+      "arte": "Escalera de tijera",
+      "prioridad": "M",
+      "x": 66.5,
+      "y": 3.6
+    },
+    {
+      "id": "COR-N3-14",
+      "nombre": "Repisa del arco",
+      "posicion": "x 68,2 · y 5,6",
+      "funcion": "Se alcanza desde la escalera de tijera.",
+      "implementacion": "PlatformEffector2D",
+      "arte": "Repisa sobre el arco",
+      "prioridad": "M",
+      "x": 68.2,
+      "y": 5.6
+    },
+    {
+      "id": "COR-N3-15",
+      "nombre": "Clavel 3/5",
+      "posicion": "x 69,1 · y 5,6",
+      "funcion": "En la repisa del arco.",
+      "implementacion": "ObjetoEspecial",
+      "arte": "Clavel",
+      "prioridad": "M",
+      "x": 69.1,
+      "y": 5.6
+    },
+    {
+      "id": "COR-N3-16",
+      "nombre": "Escalera al segundo patio",
+      "posicion": "x 80,6",
+      "funcion": "Baja de la galería al segundo patio.",
+      "implementacion": "Trigger de escalera",
+      "arte": "Escalera de mano",
+      "prioridad": "M",
+      "x": 80.6,
+      "y": 0.2
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/UI/Mayo.uss?fileID=7433441132597879392&amp;guid=c7fa810b1847cf84f8a7348b3690e78a&amp;type=3#Mayo"/>
+    <ui:VisualElement name="interfaz-mayo"/>
+</ui:UXML>

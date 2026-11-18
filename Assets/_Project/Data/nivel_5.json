@@ -1,0 +1,236 @@
+{
+  "titulo": "La azotea",
+  "elementos": [
+    {
+      "id": "COR-N5-01",
+      "nombre": "Tinaja del agua",
+      "posicion": "x 5",
+      "funcion": "Agua subida del pozo con la garrucha: llena la lata dos veces y se acaba.",
+      "implementacion": "Trigger de llenado (2 usos)",
+      "arte": "Tinaja de barro con tapa de madera",
+      "prioridad": "M",
+      "x": 5.0,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N5-02",
+      "nombre": "Ropa tendida",
+      "posicion": "x 9 · y 0,8",
+      "funcion": "Tapa la vista de las palomas: se pasa detrás sin espantarlas.",
+      "implementacion": "Oclusor",
+      "arte": "Sábanas y ropa en el tendedero (se mecen)",
+      "prioridad": "M",
+      "x": 9.0,
+      "y": 0.8
+    },
+    {
+      "id": "COR-N5-03",
+      "nombre": "Macetas del pretil (1 p.)",
+      "posicion": "x 16,5 · y 1",
+      "funcion": "Sobre el pretil: caña baja.",
+      "implementacion": "Maceta",
+      "arte": "Maceta de jazmín",
+      "prioridad": "M",
+      "x": 16.5,
+      "y": 1.0
+    },
+    {
+      "id": "COR-N5-04",
+      "nombre": "Búcaro",
+      "posicion": "x 20,5",
+      "funcion": "A la sombra de la tinaja pequeña.",
+      "implementacion": "Recogible de vida",
+      "arte": "Búcaro",
+      "prioridad": "M",
+      "x": 20.5,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N5-05",
+      "nombre": "Poyete del cañizo",
+      "posicion": "x 22,5",
+      "funcion": "Escalón al cañizo del jazmín.",
+      "implementacion": "BoxCollider2D",
+      "arte": "Poyete",
+      "prioridad": "M",
+      "x": 22.5,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N5-06",
+      "nombre": "Cañizo del jazmín",
+      "posicion": "x 24 · y 1,9",
+      "funcion": "Camino alto de cañas; desde él se alcanzan las macetas colgadas del muro.",
+      "implementacion": "PlatformEffector2D",
+      "arte": "Cañizo con jazmín trepador",
+      "prioridad": "M",
+      "x": 24.0,
+      "y": 1.9
+    },
+    {
+      "id": "COR-N5-07",
+      "nombre": "Macetas de jazmín del muro (2 p.)",
+      "posicion": "x 27 · y 4,4",
+      "funcion": "Desde el cañizo, con la caña alta.",
+      "implementacion": "Maceta",
+      "arte": "Maceta de jazmín colgada",
+      "prioridad": "M",
+      "x": 27.0,
+      "y": 4.4
+    },
+    {
+      "id": "COR-N5-08",
+      "nombre": "Palomas del palomar",
+      "posicion": "x 33-38",
+      "funcion": "Bajan del palomar a las macetas de la azotea; vuelven antes que las demás.",
+      "implementacion": "Paloma (FSM)",
+      "arte": "Paloma",
+      "prioridad": "M",
+      "x": 33.0,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N5-09",
+      "nombre": "Escalera de mano al mirador",
+      "posicion": "x 41",
+      "funcion": "Sube al techo del mirador.",
+      "implementacion": "Trigger de escalera",
+      "arte": "Escalera de mano",
+      "prioridad": "M",
+      "x": 41.0,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N5-10",
+      "nombre": "Techo del mirador",
+      "posicion": "x 41,6 · y 3,4",
+      "funcion": "Azotea pequeña con pretil bajo.",
+      "implementacion": "PlatformEffector2D",
+      "arte": "Mirador encalado con arcos",
+      "prioridad": "M",
+      "x": 41.6,
+      "y": 3.4
+    },
+    {
+      "id": "COR-N5-11",
+      "nombre": "Avispero del mirador",
+      "posicion": "x 47,5 · y 2,8",
+      "funcion": "Bajo el alero del mirador.",
+      "implementacion": "Punto de patrulla",
+      "arte": "Avispero",
+      "prioridad": "M",
+      "x": 47.5,
+      "y": 2.8
+    },
+    {
+      "id": "COR-N5-12",
+      "nombre": "Avispa del mirador",
+      "posicion": "x 46 · y 1,2",
+      "funcion": "Patrulla bajo y sobre el alero: hay que regar sus macetas desde la escalera o desde lejos.",
+      "implementacion": "Avispa (FSM)",
+      "arte": "Avispa",
+      "prioridad": "M",
+      "x": 46.0,
+      "y": 1.2
+    },
+    {
+      "id": "COR-N5-13",
+      "nombre": "Macetas del alero del mirador (5 p.)",
+      "posicion": "x 50 · y 2,2",
+      "funcion": "Junto al avispero.",
+      "implementacion": "Maceta",
+      "arte": "Maceta de alero",
+      "prioridad": "M",
+      "x": 50.0,
+      "y": 2.2
+    },
+    {
+      "id": "COR-N5-14",
+      "nombre": "Pretil del mirador",
+      "posicion": "x 55,6 · y 3,4",
+      "funcion": "Escalón hacia el tejado del vecino.",
+      "implementacion": "BoxCollider2D",
+      "arte": "Pretil encalado",
+      "prioridad": "M",
+      "x": 55.6,
+      "y": 3.4
+    },
+    {
+      "id": "COR-N5-15",
+      "nombre": "Peldaño de obra",
+      "posicion": "x 57 · y 5,4",
+      "funcion": "Del pretil al tejado vecino.",
+      "implementacion": "PlatformEffector2D",
+      "arte": "Peldaño",
+      "prioridad": "M",
+      "x": 57.0,
+      "y": 5.4
+    },
+    {
+      "id": "COR-N5-16",
+      "nombre": "Tejado del vecino",
+      "posicion": "x 59 · y 6,2",
+      "funcion": "Más alto que el de Rafaela; caer cuesta un golpe.",
+      "implementacion": "PlatformEffector2D",
+      "arte": "Tejado de teja árabe",
+      "prioridad": "M",
+      "x": 59.0,
+      "y": 6.2
+    },
+    {
+      "id": "COR-N5-17",
+      "nombre": "Clavel 5/5",
+      "posicion": "x 72 · y 6,2",
+      "funcion": "En una maceta rota del tejado vecino.",
+      "implementacion": "ObjetoEspecial",
+      "arte": "Clavel",
+      "prioridad": "M",
+      "x": 72.0,
+      "y": 6.2
+    },
+    {
+      "id": "COR-N5-18",
+      "nombre": "Escalera del palomar",
+      "posicion": "x 81,5",
+      "funcion": "Escalera de mano al techo del palomar.",
+      "implementacion": "Trigger de escalera",
+      "arte": "Escalera de mano corta",
+      "prioridad": "M",
+      "x": 81.5,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N5-19",
+      "nombre": "El palomar",
+      "posicion": "x 82 · y 6,2",
+      "funcion": "Torre de palomas del vecino: de aquí salen las palomas.",
+      "implementacion": "BoxCollider2D + generador de palomas",
+      "arte": "Palomar de ladrillo encalado con agujeros",
+      "prioridad": "M",
+      "x": 82.0,
+      "y": 6.2
+    },
+    {
+      "id": "COR-N5-20",
+      "nombre": "Techo del palomar",
+      "posicion": "x 82 · y 9",
+      "funcion": "Lo más alto del juego.",
+      "implementacion": "PlatformEffector2D",
+      "arte": "Techo del palomar",
+      "prioridad": "M",
+      "x": 82.0,
+      "y": 9.0
+    },
+    {
+      "id": "COR-N5-21",
+      "nombre": "La última maceta",
+      "posicion": "x 86,5 · y 9",
+      "funcion": "La maceta grande de jazmín: al regarla suenan las siete y se cuentan los puntos.",
+      "implementacion": "Meta (trigger de riego)",
+      "arte": "Maceta grande de jazmín en flor",
+      "prioridad": "M",
+      "x": 86.5,
+      "y": 9.0
+    }
+  ]
+}

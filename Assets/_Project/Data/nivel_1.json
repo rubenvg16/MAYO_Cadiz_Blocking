@@ -1,0 +1,181 @@
+{
+  "titulo": "El zaguán y el pozo",
+  "elementos": [
+    {
+      "id": "COR-N1-01",
+      "nombre": "Cartel del concurso de patios",
+      "posicion": "x 4,5",
+      "funcion": "Muestra la hora a la que llega el jurado y los puntos mínimos (45).",
+      "implementacion": "Trigger + panel de UI",
+      "arte": "Cartel de papel del concurso de 1985 pegado en la pared",
+      "prioridad": "M",
+      "x": 4.5,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N1-02",
+      "nombre": "Poyete de la fachada",
+      "posicion": "x 6,5",
+      "funcion": "Escalón bajo; encima, las primeras macetas.",
+      "implementacion": "BoxCollider2D",
+      "arte": "Poyete encalado",
+      "prioridad": "M",
+      "x": 6.5,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N1-03",
+      "nombre": "Macetas bajas (1 p.)",
+      "posicion": "x 7,7 · y 0,5",
+      "funcion": "A la altura de la mano: se riegan con la caña baja.",
+      "implementacion": "Maceta (sedienta / regada)",
+      "arte": "Maceta de barro pintada de añil, en dos estados",
+      "prioridad": "M",
+      "x": 7.7,
+      "y": 0.5
+    },
+    {
+      "id": "COR-N1-04",
+      "nombre": "Macetas de la reja (2 p.)",
+      "posicion": "x 12 · y 2,6",
+      "funcion": "Colgadas sobre la reja: piden la caña alta.",
+      "implementacion": "Maceta",
+      "arte": "Reja de ventana con macetas colgadas",
+      "prioridad": "M",
+      "x": 12.0,
+      "y": 2.6
+    },
+    {
+      "id": "COR-N1-05",
+      "nombre": "Poyo de la cocina",
+      "posicion": "x 19,5",
+      "funcion": "Sobre él, el búcaro.",
+      "implementacion": "BoxCollider2D",
+      "arte": "Poyo de azulejos de la cocina",
+      "prioridad": "M",
+      "x": 19.5,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N1-06",
+      "nombre": "Búcaro de agua fresca",
+      "posicion": "x 20,3 · y 0,9",
+      "funcion": "Recupera un golpe.",
+      "implementacion": "Recogible de vida",
+      "arte": "Búcaro de barro con su plato",
+      "prioridad": "M",
+      "x": 20.3,
+      "y": 0.9
+    },
+    {
+      "id": "COR-N1-07",
+      "nombre": "Maceta suelta",
+      "posicion": "x 24",
+      "funcion": "Se recoge con ACCIÓN y se lleva en la otra mano.",
+      "implementacion": "Recogible + estado «llevando maceta»",
+      "arte": "Maceta suelta de barro, sin flor",
+      "prioridad": "M",
+      "x": 24.0,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N1-08",
+      "nombre": "Clavo vacío bajo",
+      "posicion": "x 28 · y 1,8",
+      "funcion": "Colgar aquí: la maceta cuenta 1 punto colgada y otro al regarla.",
+      "implementacion": "Punto de colgar (trigger)",
+      "arte": "Clavo en la pared encalada",
+      "prioridad": "M",
+      "x": 28.0,
+      "y": 1.8
+    },
+    {
+      "id": "COR-N1-09",
+      "nombre": "Clavo vacío alto",
+      "posicion": "x 31 · y 2,6",
+      "funcion": "Colgar de puntillas: vale 2 al regarla y las palomas no llegan.",
+      "implementacion": "Punto de colgar (trigger)",
+      "arte": "Clavo",
+      "prioridad": "M",
+      "x": 31.0,
+      "y": 2.6
+    },
+    {
+      "id": "COR-N1-10",
+      "nombre": "Brocal del pozo",
+      "posicion": "x 37,5",
+      "funcion": "Con ACCIÓN junto al brocal se saca agua (2 s) y la lata vuelve a 4 riegos.",
+      "implementacion": "Trigger de llenado + animación",
+      "arte": "Brocal de piedra con arco de hierro y garrucha",
+      "prioridad": "M",
+      "x": 37.5,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N1-11",
+      "nombre": "Pila de lavar",
+      "posicion": "x 41",
+      "funcion": "Llena de agua; su borde es un escalón.",
+      "implementacion": "BoxCollider2D (borde)",
+      "arte": "Pila de lavar de piedra",
+      "prioridad": "M",
+      "x": 41.0,
+      "y": 0.2
+    },
+    {
+      "id": "COR-N1-12",
+      "nombre": "El cubo que flota",
+      "posicion": "x 41,6 · y 0,9",
+      "funcion": "Flota en la pila y hace de escalón más alto (se hunde un poco al pisarlo).",
+      "implementacion": "BuoyancyEffector2D",
+      "arte": "Cubo de cinc",
+      "prioridad": "D",
+      "x": 41.6,
+      "y": 0.9
+    },
+    {
+      "id": "COR-N1-13",
+      "nombre": "Repisa de la cocina",
+      "posicion": "x 43,4 · y 1,9",
+      "funcion": "Se alcanza desde el borde de la pila (o desde el cubo, más fácil).",
+      "implementacion": "PlatformEffector2D",
+      "arte": "Repisa de obra con tarros",
+      "prioridad": "M",
+      "x": 43.4,
+      "y": 1.9
+    },
+    {
+      "id": "COR-N1-14",
+      "nombre": "Clavel 1/5",
+      "posicion": "x 44,4 · y 1,9",
+      "funcion": "En la repisa, detrás de los tarros.",
+      "implementacion": "ObjetoEspecial",
+      "arte": "Clavel rojo",
+      "prioridad": "M",
+      "x": 44.4,
+      "y": 1.9
+    },
+    {
+      "id": "COR-N1-15",
+      "nombre": "Maceta colgada que se mece",
+      "posicion": "x 58 · y 2,4",
+      "funcion": "Se mece si la lata la golpea; con un golpe fuerte se descuelga y cae.",
+      "implementacion": "HingeJoint2D con fuerza de ruptura",
+      "arte": "Maceta colgada de su clavo (pieza aparte)",
+      "prioridad": "D",
+      "x": 58.0,
+      "y": 2.4
+    },
+    {
+      "id": "COR-N1-16",
+      "nombre": "La cancela",
+      "posicion": "x 68",
+      "funcion": "Abierta: separa el zaguán del patio.",
+      "implementacion": "Decorado (sin colisión)",
+      "arte": "Cancela de hierro forjado",
+      "prioridad": "M",
+      "x": 68.0,
+      "y": 0.2
+    }
+  ]
+}
