@@ -31,6 +31,9 @@ public sealed class MayoPrototipo : MonoBehaviour
     private Vector2 movimiento;
     private bool salto, derecha = true, pausado, abriendoPuerta;
     private string estado;
+    private string estadoSalto;
+    private readonly ContactFilter2D apoyoSalto = new ContactFilter2D
+        { useTriggers = false, useNormalAngle = true, minNormalAngle = 45f, maxNormalAngle = 135f };
     private Label estadoUi, ayuda;
     private VisualElement raiz, panel;
     private float opacidad;
@@ -617,11 +620,16 @@ public sealed class MayoPrototipo : MonoBehaviour
         {
             RestaurarPlataformas();
         }
+        bool despega = false;
         if (!escalera && chorro.Contains(pos)) y = 8f;
         else if (!escalera && salto)
         {
             var suelo = Physics2D.Raycast(pos + Vector2.up * .04f, Vector2.down, .21f, 1);
-            if (suelo.collider) y = 8.8f;
+            if (suelo.collider)
+            {
+                y = 8.8f;
+                despega = true;
+            }
         }
         salto = false;
         rafaela.linearVelocity = new Vector2(x, y);
@@ -631,7 +639,17 @@ public sealed class MayoPrototipo : MonoBehaviour
         {
             var sentido = derecha ? "right" : "left";
             var avance = Mathf.Abs(y) > .08f;
-            if (escalera && avance)
+            if (despega)
+            {
+                var clip = "jump_" + sentido;
+                if (animador.HasState(0, Animator.StringToHash(clip))) estadoSalto = clip;
+            }
+            else if (estadoSalto != null && (escalera || (y <= .1f && cuerpo && cuerpo.IsTouching(apoyoSalto))))
+                estadoSalto = null;
+
+            if (estadoSalto != null)
+                nuevo = estadoSalto;
+            else if (escalera && avance)
                 nuevo = (y > 0 ? "mano_subir_" : "mano_bajar_") + sentido;
             else if (!escalera && Mathf.Abs(x) > .1f)
             {

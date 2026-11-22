@@ -1,0 +1,24 @@
+# Unity rebuilds these directories when the project opens.
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Local builds and diagnostic captures.
+/[Bb]uild/
+/[Bb]uilds/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Local tooling and generated IDE files (root only).
+/.atl/
+/.vs/
+/.vscode/
+/.idea/
+/.vsconfig
+/*.csproj
+/*.sln
+/*.slnx
+/*.user
+/*.unityproj

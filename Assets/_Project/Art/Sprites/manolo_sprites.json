@@ -56,6 +56,24 @@
     2016,
     800
    ]
+  },
+  {
+   "name": "manolo_jump_left",
+   "frames": 12,
+   "cols": 6,
+   "rows": 2,
+   "fps": 18,
+   "loop": false,
+   "size": [2016, 800]
+  },
+  {
+   "name": "manolo_jump_right",
+   "frames": 12,
+   "cols": 6,
+   "rows": 2,
+   "fps": 18,
+   "loop": false,
+   "size": [2016, 800]
   }
  ]
 }

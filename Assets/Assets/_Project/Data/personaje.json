@@ -1,0 +1,7 @@
+{
+ "nombre": "manolo",
+ "altura": 1.82,
+ "velocidad": 1.5,
+ "velocidadNaturalDelClip": 0.75,
+ "cuatroPatas": false
+}
